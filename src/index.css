@@ -1,0 +1,100 @@
+/*==== MIse en forme navigation ==== */
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+}
+
+.active {
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+}
+
+
+/* ====== Grid ==============*/
+.container {
+    display: grid;
+    grid-templates-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flows: dense;
+    width: 100%;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+
+.col-1 {
+    grid-column-end: span 1;
+    text-align: center;
+}
+
+.col-2 {
+    grid-column-end: span 2;
+    text-align: center;
+}
+
+.col-4 {
+    grid-column-end: span 4;
+}
+
+.col-8 {
+    grid-column-end: span 8;
+}
+
+
+/*=== Mise en forme générale application ====*/
+.bloc {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content {
+    padding: 15px;
+    box-shadow: 5px 5px 8px black;
+    border-radius: 6px;
+    text-align: center;
+}
+
+div {
+    margin: 5px;
+}
+
+label {
+    margin: 5px;
+}
+
+/*==== Mise en forme To do list =========*/
+.todolist {
+    width: 400px;
+}
+
+
+/*======== Mise en forme Meteo =========*/
+.meteo {
+    width: 250px;
+}
+
+/* === Mise en forme Calculatrice ====*/
+.calculatrice {
+    width: 150px;
+}
+
+td {
+    background-color: white;
+    border: 1px solid black;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+button {
+      background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
