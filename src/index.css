@@ -115,3 +115,8 @@ button {
     cursor: pointer;
     outline: inherit;
 }
+
+/*==== Mise en forme livre ====*/
+.book {
+    width: 400px;
+}

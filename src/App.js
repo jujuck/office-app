@@ -2,11 +2,13 @@ import React from 'react';
 import AppWeather from './weather-app/AppWeather';
 import ToDoListApp from './todolist/ToDoListApp';
 import AppCalculator from './calculatrice/AppCalculator';
+import AppBook from './books/appBook';
 
 const VIA = {
     ToDoList: '#/to-do-list',
     Meteo : '#/meteo',
-    Calculatrice: '#/calculatrice'
+    Calculatrice: '#/calculatrice',
+    Book: '#/livres'
 };
 
 class App extends React.Component {
@@ -29,6 +31,11 @@ class App extends React.Component {
                     id: 'App3',
                     name: "Calculatrice",
                     tag: <AppCalculator />
+                },
+                {
+                    id: 'App4',
+                    name: "Books",
+                    tag: <AppBook />
                 }
             ]
         };
@@ -44,6 +51,7 @@ class App extends React.Component {
             case VIA.ToDoList : return <ToDoListApp />;
             case VIA.Calculatrice : return <AppCalculator />;
             case VIA.Meteo : return <AppWeather />;
+            case VIA.Book : return <AppBook />;
             default: return <NotFound />
         }
     }
@@ -54,8 +62,9 @@ class App extends React.Component {
             <section>
                 <div className="container">
                     <div className="col-2 btn"><a href={VIA.ToDoList}>To Do List</a></div>
-                    <div className="col-2 btn"><a href={VIA.Meteo}>Weather</a></div>
+                    <div className="col-2 btn"><a href={VIA.Meteo}>Météo</a></div>
                     <div className="col-2 btn"><a href={VIA.Calculatrice}>Calculatrice</a></div>
+                    <div className="col-2 btn"><a href={VIA.Book}>Livres</a></div>
                 </div>
                 {this.renderVia()}
             </section>
