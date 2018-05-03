@@ -48,13 +48,14 @@ class App extends React.Component {
         }
     }
     
+    
     render() {
         return (
             <section>
                 <div className="container">
-                    <div className="col-2"><a href={VIA.ToDoList}>To Do List</a></div>
-                    <div className="col-2"><a href={VIA.Meteo}>Weather</a></div>
-                    <div className="col-2"><a href={VIA.Calculatrice}>Calculatrice</a></div>
+                    <div className="col-2 btn"><a href={VIA.ToDoList}>To Do List</a></div>
+                    <div className="col-2 btn"><a href={VIA.Meteo}>Weather</a></div>
+                    <div className="col-2 btn"><a href={VIA.Calculatrice}>Calculatrice</a></div>
                 </div>
                 {this.renderVia()}
             </section>
