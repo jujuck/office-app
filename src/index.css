@@ -76,7 +76,7 @@ label {
 
 /*==== Mise en forme To do list =========*/
 .todolist {
-    width: 400px;
+    width: 40%;
 }
 
 
@@ -118,5 +118,5 @@ button {
 
 /*==== Mise en forme livre ====*/
 .book {
-    width: 400px;
+    width: 50%;
 }
